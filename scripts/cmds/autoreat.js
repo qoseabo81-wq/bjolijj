@@ -1,6 +1,6 @@
 module.exports = {
     config: {
-        name: "autoreact",
+        name: "تفاعل",
         version: "1.0",
         author: "Loid Butter",
         countDown: 5,
