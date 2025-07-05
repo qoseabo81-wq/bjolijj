@@ -44,7 +44,7 @@ module.exports = {
           names.forEach(cmd => {
             msg += ` ❖ ${cmd.padEnd(15)}\n`;
           });
-          msg += `⋆⭒˚｡⋆━━━✦━━━⋆˚｡⭒⋆\n`;
+          
         });
 
       msg += `نازي يحتوي حاليًا على ${commands.size} أوامر. استخدم ${prefix}help متبوعًا باسم الأمر لمزيد من التفاصيل حول الأمر`;
