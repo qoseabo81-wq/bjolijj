@@ -1,6 +1,6 @@
 module.exports = {
   config: {
-    name: "autorespondv2",
+    name: "ردود",
     version: "2.0.0",
     author: "Haru",
     cooldown: 5,
@@ -30,10 +30,10 @@ module.exports = {
 
     // Replies to specific words
     const replies = {
-      "Bye": "A+ tard 🐾😘...",
-      "muaah": "💋🐾 bisous ",
-      "kaiz": "De aona ? ",
-      "who is you lover ?": "𝗦𝗘𝗥𝗘𝗡𝗔🐾 𝗶𝘀 𝗺𝘆 𝗘𝘃𝗲𝗿𝘆𝘁𝗵𝗶𝗻𝗴🐱",
+      "صلاح": "يعب عايز منو شنو 🐢",
+      "راكة": "عمك.يا سابي 🤓 ",
+      "المطور": "ارقد تحت •-•",
+      "مطور": "ندفع كم 😐",
     };
 
     // React based on words
