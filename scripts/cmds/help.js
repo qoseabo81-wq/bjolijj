@@ -39,7 +39,7 @@ module.exports = {
         .filter(cat => cat !== "معلومات")
         .forEach(category => {
           
-          msg += `\n`;
+          
           const names = categories[category].commands.sort();
           names.forEach(cmd => {
             msg += ` ❖ ${cmd.padEnd(15)}\n`;
