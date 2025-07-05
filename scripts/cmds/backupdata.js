@@ -2,7 +2,7 @@ const fs = require("fs-extra");
 
 module.exports = {
 	config: {
-		name: "backupdata",
+		name: "نسخ-بيانات",
 		version: "1.3",
 		author: "NTKhang",
 		countDown: 5,
