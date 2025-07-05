@@ -3,7 +3,7 @@ const { getStreamFromURL } = global.utils;
 
 module.exports = {
 	config: {
-		name: "appstore",
+		name: "متجر", 
 		version: "1.2",
 		author: "NTKhang",
 		countDown: 5,
@@ -27,8 +27,8 @@ module.exports = {
 			noResult: "Không tìm thấy kết quả nào cho từ khóa %1"
 		},
 		en: {
-			missingKeyword: "You haven't entered any keyword",
-			noResult: "No result found for keyword %1"
+			missingKeyword: "لم تُدخل أي كلمة رئيسية",
+			noResult: "لم يتم العثور على أي نتيجة للكلمة الرئيسية %1"
 		}
 	},
 
