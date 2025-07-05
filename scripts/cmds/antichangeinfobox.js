@@ -2,7 +2,7 @@ const { getStreamFromURL, uploadImgbb } = global.utils;
 
 module.exports = {
 	config: {
-		name: "antichangeinfobox",
+		name: "حماية",
 		version: "1.9",
 		author: "NTKhang",
 		countDown: 5,
@@ -18,11 +18,11 @@ module.exports = {
 				+ "\n   {pn} nickname [on | off]: chống đổi nickname trong box chat"
 				+ "\n   {pn} theme [on | off]: chống đổi theme (chủ đề) box chat"
 				+ "\n   {pn} emoji [on | off]: chống đổi trạng emoji box chat",
-			en: "   {pn} avt [on | off]: anti change avatar box chat"
-				+ "\n   {pn} name [on | off]: anti change name box chat"
-				+ "\n   {pn} nickname [on | off]: anti change nickname in box chat"
-				+ "\n   {pn} theme [on | off]: anti change theme (chủ đề) box chat"
-				+ "\n   {pn} emoji [on | off]: anti change emoji box chat"
+			en: "   {pn} avt [تشغيل | إيقاف]: دردشة ضد تغيير الصورة الرمزية" 
+				+ "\n {pn} name [تشغيل | إيقاف]: دردشة ضد تغيير الاسم" 
+				+ "\n {pn} nickname [تشغيل | إيقاف]: دردشة ضد تغيير الاسم" 
+				+ "\n {pn} theme [تشغيل | إيقاف]: دردشة ضد تغيير المظهر (الاسم المستعار)" 
+				+ "\n {pn} symbol [تشغيل | إيقاف]: دردشة ضد تغيير الرمز التعبيري"
 		}
 	},
 
@@ -47,23 +47,22 @@ module.exports = {
 			antiChangeEmojiAlreadyOn: "Hiện tại box chat của bạn đang bật chức năng cấm thành viên đổi emoji"
 		},
 		en: {
-			antiChangeAvatarOn: "Turn on anti change avatar box chat",
-			antiChangeAvatarOff: "Turn off anti change avatar box chat",
-			missingAvt: "You have not set avatar for box chat",
-			antiChangeNameOn: "Turn on anti change name box chat",
-			antiChangeNameOff: "Turn off anti change name box chat",
-			antiChangeNicknameOn: "Turn on anti change nickname box chat",
-			antiChangeNicknameOff: "Turn off anti change nickname box chat",
-			antiChangeThemeOn: "Turn on anti change theme box chat",
-			antiChangeThemeOff: "Turn off anti change theme box chat",
-			antiChangeEmojiOn: "Turn on anti change emoji box chat",
-			antiChangeEmojiOff: "Turn off anti change emoji box chat",
-			antiChangeAvatarAlreadyOn: "Your box chat is currently on anti change avatar",
-			antiChangeAvatarAlreadyOnButMissingAvt: "Your box chat is currently on anti change avatar but your box chat has not set avatar",
-			antiChangeNameAlreadyOn: "Your box chat is currently on anti change name",
-			antiChangeNicknameAlreadyOn: "Your box chat is currently on anti change nickname",
-			antiChangeThemeAlreadyOn: "Your box chat is currently on anti change theme",
-			antiChangeEmojiAlreadyOn: "Your box chat is currently on anti change emoji"
+			antiChangeAvatarOn: "تفعيل دردشة صندوق الصور الرمزية", 
+		        antiChangeAvatarOff: "إيقاف دردشة صندوق الصور الرمزية", 
+	                missingAvt: "لم تُعيّن صورة رمزية لدردشة صندوق الصور", 
+			antiChangeNameOn: "تفعيل دردشة صندوق الصور الرمزية", 
+			antiChangeNameOff: "إيقاف دردشة صندوق الصور الرمزية", 
+			antiChangeNicknameOn: "تفعيل دردشة صندوق الصور الرمزية", 
+			antiChangeNicknameOff: "إيقاف دردشة صندوق الصور الرمزية", 
+			antiChangeThemeOn: "تفعيل دردشة صندوق الصور الرمزية", 
+			antiChangeThemeOff: "إيقاف دردشة صندوق الصور الرمزية",
+			antiChangeEmojiOn: "تفعيل دردشة صندوق الصور الرمزية",
+			antiChangeEmojiOff: "إيقاف دردشة صندوق الصور الرمزية",
+			antiChangeAvatarAlreadyOn: "دردشة صندوق الصور الرمزية لديك حاليًا في وضع المنع". antiChangeAvatarAlreadyOnButMissingAvt: "دردشة صندوقك حاليًا على وضعية تغيير الصورة الرمزية، لكن لم يتم تعيينها بعد",
+			antiChangeNameAlreadyOn: "دردشة صندوقك حاليًا على وضعية تغيير الاسم",
+			antiChangeNicknameAlreadyOn: "دردشة صندوقك حاليًا على وضعية تغيير اللقب",
+			antiChangeThemeAlreadyOn: "دردشة صندوقك حاليًا على وضعية تغيير السمة",
+			antiChangeEmojiAlreadyOn: "دردشة صندوقك حاليًا على وضعية تغيير الرمز التعبيري"
 		}
 	},
 
