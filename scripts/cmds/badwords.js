@@ -1,6 +1,6 @@
 module.exports = {
 	config: {
-		name: "badwords",
+		name: "مضاد",
 		aliases: ["badword"],
 		version: "1.4",
 		author: "NTKhang",
