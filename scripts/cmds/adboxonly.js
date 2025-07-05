@@ -1,6 +1,6 @@
 module.exports = {
 	config: {
-		name: "onlyadminbox",
+		name: "توقف",
 		aliases: ["onlyadbox", "adboxonly", "adminboxonly"],
 		version: "1.3",
 		author: "NTKhang",
@@ -28,11 +28,11 @@ module.exports = {
 			syntaxError: "Sai cú pháp, chỉ có thể dùng {pn} on hoặc {pn} off"
 		},
 		en: {
-			turnedOn: "Turned on the mode only admin of group can use bot",
-			turnedOff: "Turned off the mode only admin of group can use bot",
-			turnedOnNoti: "Turned on the notification when user is not admin of group use bot",
-			turnedOffNoti: "Turned off the notification when user is not admin of group use bot",
-			syntaxError: "Syntax error, only use {pn} on or {pn} off"
+			turnedOn: "تم تفعيل الوضع الذي يسمح فقط لمدير المجموعة باستخدام البوت"،
+			turnedOff: "تم إيقاف الوضع الذي يسمح فقط لمدير المجموعة باستخدام البوت"،
+	                turnedOnNoti: "تم تفعيل الإشعار عندما لا يكون المستخدم مديرًا لبوت استخدام المجموعة"،
+			turnedOffNoti: "تم إيقاف الإشعار عندما لا يكون المستخدم مديرًا لبوت استخدام المجموعة"،
+			syntaxError: "خطأ في بناء الجملة، استخدم {pn} فقط أو أوقف {pn}"
 		}
 	},
 
