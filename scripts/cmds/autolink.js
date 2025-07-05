@@ -7,7 +7,7 @@ const { getStreamFromURL, shortenURL, randomString } = global.utils;
 module.exports = {
   threadStates: {},
   config: {
-    name: 'autolink',
+    name: 'تحميل-تلقائي',
     version: '1.0',
     author: 'Kshitiz',
     countDown: 5,
