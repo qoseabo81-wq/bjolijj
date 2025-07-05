@@ -3,7 +3,7 @@ const request = require('request');
 const fs = require("fs"); 
  module.exports = { 
          config: { 
-                 name: "box", 
+                 name: "صندوق", 
                  aliases: ["box"], 
                  version: "1.0", 
                  author: "MILAN", 
