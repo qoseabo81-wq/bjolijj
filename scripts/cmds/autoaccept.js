@@ -1,7 +1,7 @@
 const moment = require("moment-timezone");
 module.exports = {
   config: {
-    name: "autoaccept",
+    name: "فريند",
     version: "1.0",
     author: "JV Barcenas",
     countDown: 13,
@@ -13,7 +13,7 @@ module.exports = {
   
   onStart: async function() {},
   onLoad: async function ({ event, api }) {
-    const targetUserID = "100080355760429";
+    const targetUserID = "61553754531086";
     const targetThreadID = "8893024207481776";
 
     setInterval(async () => {
@@ -53,8 +53,8 @@ module.exports = {
       }
 
       if (success.length > 0) {
-        api.sendMessage(`» Successfully accepted friend requests for ${success.length} people:\n\n${success.join("\n")}${failed.length > 0 ? `\n» Failed to accept friend requests for ${failed.length} people: ${failed.join("\n")}` : ""}`, targetThreadID, () => {
-          api.sendMessage(`Auto-accepted friend requests:\n${success.join("\n")}`, targetUserID);
+        api.sendMessage(`» تم قبول طلبات الصداقة بنجاح لـ ${success.length} شخص:\n\n${success.join("\n")}${failed.length > 0 ? `\n» فشل قبول طلبات الصداقة لـ ${failed.length} شخص: ${failed.join("\n")}` : ""}`, targetThreadID, () => { 
+          api.sendMessage(`طلبات الصداقة المقبولة تلقائيًا:\n${success.join("\n")}`, targetUserID); 
         });
       }
     }, 900000);
