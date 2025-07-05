@@ -13,7 +13,7 @@ const langsSupported = [
 
 module.exports = {
 	config: {
-		name: "emojimean",
+		name: "ايموجي",
 		alias: ["em", "emojimeaning", "emojimean"],
 		version: "1.4",
 		author: "NTKhang",
