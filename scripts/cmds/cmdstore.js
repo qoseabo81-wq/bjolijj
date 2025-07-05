@@ -6,7 +6,7 @@ module.exports = {
 
   config: {
 
-    name: 'cmdstore',
+    name: 'امر2',
 
     version: '1.0',
 
