@@ -1,6 +1,6 @@
 module.exports = {
   config: {
-    name: "bio",
+    name: "بايو",
     version: "1.7",
     author: "xemon",
     countDown: 5,
