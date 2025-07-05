@@ -1,6 +1,6 @@
 module.exports = {
   config: {
-    name: "emoji_reponses",
+    name: "تفاعلات",
     version: "1.0",
     author: "Ghost",
     countDown: 5,
