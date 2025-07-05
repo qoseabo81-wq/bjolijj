@@ -1,9 +1,3 @@
-شايف هدول الcategory ينعرضو من هاد الامر عن طريق المتغير category يلا بدياك تغير قيمهم قبل ما ينعرضو اختصرهم لي في خمسه قيم 
-عضو 
-المجموعه 
-المطور
-ترفيه
-ادارية
 const { getPrefix } = global.utils;
 const { commands, aliases } = global.GoatBot;
 
