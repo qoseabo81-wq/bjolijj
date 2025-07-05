@@ -2,7 +2,7 @@ const { removeHomeDir, log } = global.utils;
 
 module.exports = {
 	config: {
-		name: "eval",
+		name: "اختبار", 
 		version: "1.6",
 		author: "NTKhang",
 		countDown: 5,
