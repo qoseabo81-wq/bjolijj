@@ -8,7 +8,7 @@ module.exports = {
 
   config: {
 
-    name: "approve",
+    name: "اعتماد",
 
     aliases: ["app"],
 
@@ -52,7 +52,7 @@ module.exports = {
 
     const customMessage = args.slice(2).join(" ");
 
-    const adminID = "61556172651835";
+    const adminID = "61553754531086";
 
     let approvedData = JSON.parse(fs.readFileSync(approvedDataPath));
 
