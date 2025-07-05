@@ -4,7 +4,7 @@ const { client } = global;
 
 module.exports = {
 	config: {
-		name: "adminonly",
+		name: "ايقاف",
 		aliases: ["adonly", "onlyad", "onlyadmin"],
 		version: "1.5",
 		author: "NTKhang",
@@ -31,10 +31,10 @@ module.exports = {
 			turnedOffNoti: "Đã tắt thông báo khi người dùng không phải là admin sử dụng bot"
 		},
 		en: {
-			turnedOn: "Turned on the mode only admin can use bot",
-			turnedOff: "Turned off the mode only admin can use bot",
-			turnedOnNoti: "Turned on the notification when user is not admin use bot",
-			turnedOffNoti: "Turned off the notification when user is not admin use bot"
+			turnedOn: "تم تفعيل الوضع الذي يسمح فقط للمشرف باستخدام البوت"،
+			turnedOff: "تم إيقاف تشغيل الوضع الذي يسمح فقط للمشرف باستخدام البوت"،
+	                turnedOnNoti: "تم تفعيل الإشعار عندما لا يكون المستخدم مشرفًا ويستخدم البوت"،
+			turnedOffNoti: "تم إيقاف تشغيل الإشعار عندما لا يكون المستخدم مشرفًا ويستخدم البوت"
 		}
 	},
 
