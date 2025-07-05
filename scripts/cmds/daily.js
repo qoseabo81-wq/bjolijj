@@ -2,7 +2,7 @@ const moment = require("moment-timezone");
 
 module.exports = {
 	config: {
-		name: "daily",
+		name: "يوميا",
 		version: "1.2",
 		author: "NTKhang",
 		countDown: 5,
