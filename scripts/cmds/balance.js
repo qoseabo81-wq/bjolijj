@@ -1,6 +1,6 @@
 module.exports = {
 	config: {
-		name: "balance",
+		name: "توازن",
 		aliases: ["bal"],
 		version: "1.2",
 		author: "NTKhang",
