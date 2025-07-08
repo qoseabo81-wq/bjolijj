@@ -4,7 +4,7 @@ const fs = require("fs-extra");
 
 module.exports = {
   config: {
-    name: "pair",
+    name: "زوجني",
     aurthor:"xemon",
      role: 0,
     shortDescription: " ",
@@ -44,7 +44,7 @@ module.exports = {
       }
     }
     var id2 = ungvien[Math.floor(Math.random() * ungvien.length)];
-    var name2 = "Uff ksto ramro jodi 💋"; // Replace with function that retrieves the name of the user
+    var name2 = "روعه، ثنائي رائع 🦊"; // Replace with function that retrieves the name of the user
     var rd1 = Math.floor(Math.random() * 100) + 1;
     var cc = ["0", "-1", "99,99", "-99", "-100", "101", "0,01"];
     var rd2 = cc[Math.floor(Math.random() * cc.length)];
@@ -92,7 +92,8 @@ module.exports = {
     fs.removeSync(pathAvt2);
     return api.sendMessage(
       {
-        body: `🥰Successful pairing! ${name1}\💌Wish you two hundred years of happiness💕${name2}.\—The odds are ${tile}%`,
+        body: `🥰 ألف مبروك! ${name1} و ${name2}، نتمنى لكما حياة سعيدة دائمة💕. الاحتمالات هي ${tile}%`
+
         mentions: [
           {
             tag: `${name2}`,
