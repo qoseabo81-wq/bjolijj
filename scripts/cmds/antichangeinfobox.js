@@ -18,11 +18,11 @@ module.exports = {
 				+ "\n   {pn} nickname [on | off]: chống đổi nickname trong box chat"
 				+ "\n   {pn} theme [on | off]: chống đổi theme (chủ đề) box chat"
 				+ "\n   {pn} emoji [on | off]: chống đổi trạng emoji box chat",
-			en: "   {pn} avt [on | off]: anti change avatar box chat"
-				+ "\n   {pn} name [on | off]: anti change name box chat"
-				+ "\n   {pn} nickname [on | off]: anti change nickname in box chat"
-				+ "\n   {pn} theme [on | off]: anti change theme (chủ đề) box chat"
-				+ "\n   {pn} emoji [on | off]: anti change emoji box chat"
+			en: " {pn} صورة [تشغيل/إيقاف]: منع تغيير صورة المجموعة" +
+"\n {pn} اسم [تشغيل/إيقاف]: منع تغيير اسم المجموعة" +
+"\n {pn} اسم مستعار [تشغيل/إيقاف]: منع تغيير الأسماء المستعارة في المجموعة" +
+"\n {pn} سمة [تشغيل/إيقاف]: منع تغيير موضوع المجموعة" +
+"\n {pn} إيموجي [تشغيل/إيقاف]: منع تغيير الرموز التعبيرية للمجموعة" 
 		}
 	},
 
@@ -47,24 +47,24 @@ module.exports = {
 			antiChangeEmojiAlreadyOn: "Hiện tại box chat của bạn đang bật chức năng cấm thành viên đổi emoji"
 		},
 		en: {
-			antiChangeAvatarOn: "Turn on anti change avatar box chat",
-			antiChangeAvatarOff: "Turn off anti change avatar box chat",
-			missingAvt: "You have not set avatar for box chat",
-			antiChangeNameOn: "Turn on anti change name box chat",
-			antiChangeNameOff: "Turn off anti change name box chat",
-			antiChangeNicknameOn: "Turn on anti change nickname box chat",
-			antiChangeNicknameOff: "Turn off anti change nickname box chat",
-			antiChangeThemeOn: "Turn on anti change theme box chat",
-			antiChangeThemeOff: "Turn off anti change theme box chat",
-			antiChangeEmojiOn: "Turn on anti change emoji box chat",
-			antiChangeEmojiOff: "Turn off anti change emoji box chat",
-			antiChangeAvatarAlreadyOn: "Your box chat is currently on anti change avatar",
-			antiChangeAvatarAlreadyOnButMissingAvt: "Your box chat is currently on anti change avatar but your box chat has not set avatar",
-			antiChangeNameAlreadyOn: "Your box chat is currently on anti change name",
-			antiChangeNicknameAlreadyOn: "Your box chat is currently on anti change nickname",
-			antiChangeThemeAlreadyOn: "Your box chat is currently on anti change theme",
-			antiChangeEmojiAlreadyOn: "Your box chat is currently on anti change emoji"
-		}
+antiChangeAvatarOn: "تفعيل منع تغيير صورة صندوق الدردشة",
+antiChangeAvatarOff: "إلغاء تفعيل منع تغيير صورة صندوق الدردشة",
+missingAvt: "لم تقم بتعيين صورة لصندوق الدردشة",
+antiChangeNameOn: "تفعيل منع تغيير اسم صندوق الدردشة",
+antiChangeNameOff: "إلغاء تفعيل منع تغيير اسم صندوق الدردشة",
+antiChangeNicknameOn: "تفعيل منع تغيير الاسم المستعار لصندوق الدردشة",
+antiChangeNicknameOff: "إلغاء تفعيل منع تغيير الاسم المستعار لصندوق الدردشة",
+antiChangeThemeOn: "تفعيل منع تغيير سمة صندوق الدردشة",
+antiChangeThemeOff: "إلغاء تفعيل منع تغيير سمة صندوق الدردشة",
+antiChangeEmojiOn: "تفعيل منع تغيير الرموز التعبيرية لصندوق الدردشة",
+antiChangeEmojiOff: "إلغاء تفعيل منع تغيير الرموز التعبيرية لصندوق الدردشة",
+antiChangeAvatarAlreadyOn: "صندوق الدردشة الخاص بك لديه بالفعل تفعيل منع تغيير الصورة",
+antiChangeAvatarAlreadyOnButMissingAvt: "صندوق الدردشة الخاص بك لديه بالفعل تفعيل منع تغيير الصورة ولكن لم تقم بتعيين صورة لصندوق الدردشة",
+antiChangeNameAlreadyOn: "صندوق الدردشة الخاص بك لديه بالفعل تفعيل منع تغيير الاسم",
+antiChangeNicknameAlreadyOn: "صندوق الدردشة الخاص بك لديه بالفعل تفعيل منع تغيير الاسم المستعار",
+antiChangeThemeAlreadyOn: "صندوق الدردشة الخاص بك لديه بالفعل تفعيل منع تغيير السمة",
+antiChangeEmojiAlreadyOn: "صندوق الدردشة الخاص بك لديه بالفعل تفعيل منع تغيير الرموز التعبيرية"
+}
 	},
 
 	onStart: async function ({ message, event, args, threadsData, getLang }) {
