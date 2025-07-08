@@ -9,14 +9,14 @@ module.exports = {
     countDown: 5,
     role: 0,
     shortDescription: {
-      ar: "عرض استخدام الأمر وقائمة جميع الأوامر"
+      en: "عرض استخدام الأمر وقائمة جميع الأوامر"
     },
-    longDescription: {
-      ar: "عرض استخدام الأمر وقائمة جميع الأوامر مع معلومات مفصلة"
+    description: {
+      en: "عرض استخدام الأمر وقائمة جميع الأوامر مع معلومات مفصلة"
     },
     category: "معلومات",
     guide: {
-      ar: "{pn} [فارغ | <اسم الأمر>]"
+      en: "{pn} [فارغ | <اسم الأمر>]"
     },
     priority: 1
   },
@@ -25,7 +25,7 @@ module.exports = {
     const prefix = getPrefix(threadID);
 
     if (args.length === 0) {
-      let msg = "✦ أوامر نازي ✦\n⋆⭒˚｡⋆━━━✦━━━⋆˚｡⭒⋆\n";
+      let msg = "❀━━━━〖 الاوامـر 〗━━━━❀\n\n";
       const categories = {};
 
       for (const [name, value] of commands) {
@@ -42,13 +42,15 @@ module.exports = {
           
           const names = categories[category].commands.sort();
           names.forEach(cmd => {
-            msg += ` ❖ ${cmd.padEnd(15)}\n`;
+            msg += `» : ${cmd.padEnd(15)}\n`;
           });
           
         });
 
       msg += `نازي يحتوي حاليًا على ${commands.size} أوامر. استخدم ${prefix}help متبوعًا باسم الأمر لمزيد من التفاصيل حول الأمر`;
-      msg += ` ⋆⭒˚｡⋆━━━✦━━━⋆˚｡⭒⋆\n`;
+      msg += `\n ╭─╼━━━━━━━━╾─╮
+     Rako San    
+╰─━━━━━━━━━╾─╯ \n`;
       await message.reply({ body: msg });
     } else {
       const commandName = args[0].toLowerCase();
@@ -66,12 +68,12 @@ module.exports = {
 
         let response = `✦ الاسم ✦\n ${configCommand.name}\n\n`;
         response += `❖ معلومات ❖\n`;
-        response += ` 📜 الوصف: ${longDescription}\n`;
+        response += ` 📜 الوصف: ${description}\n`;
         response += ` 🔗 الأسماء البديلة: ${configCommand.aliases ? configCommand.aliases.join(", ") : "لا يوجد"}\n`;
-        response += ` 🏆 الدور: ${roleText}\n`;
-        response += ` ⏳ وقت الانتظار: ${configCommand.countDown || 1}ثانية\n`;
-        response += ` 🛠️ المؤلف: ${author}\n\n`;
-        response += `❖ الاستخدام ❖\n ${usage}\n\n`;
+        response += ` 🏆 الدور: ${configCommand.role} \n`;
+        response += ` ⏳ وقت الانتظار: ${cconfigCommand.countDown || 1}ثانية\n`;
+        response += ` 🛠️ المطور: Rako San \n\n`;
+        response += `❖ الاستخدام ❖\n ${configCommand.guide}\n\n`;
         response += `❖ ملاحظات ❖\n 🔹 المحتوى بين <XXXXX> يمكن تعديله\n 🔹 المحتوى بين [a|b|c] يعني a أو b أو c\n`;
         await message.reply(response);
       }
