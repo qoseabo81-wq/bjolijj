@@ -1,6 +1,6 @@
  module.exports = {
 	config: {
-		name: "out",
+		name: "غادر",
 		version: "1.0",
 		author: "XyryllPanget",
 		countDown: 5,
