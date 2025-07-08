@@ -1,13 +1,13 @@
 module.exports = {
 	config: {
-		name: "kick",
+		name: "بنكاي",
 		version: "1.3",
 		author: "NTKhang",
 		countDown: 5,
 		role: 1,
 		description: {
 			vi: "Kick thành viên khỏi box chat",
-			en: "Kick member out of chat box"
+			en: "شلت معاق خارج المجموعه "
 		},
 		category: "box chat",
 		guide: {
@@ -21,7 +21,7 @@ module.exports = {
 			needAdmin: "Vui lòng thêm quản trị viên cho bot trước khi sử dụng tính năng này"
 		},
 		en: {
-			needAdmin: "Please add admin for bot before using this feature"
+			needAdmin: "ارفع البوت ادمن اول يحب 😻"
 		}
 	},
 
