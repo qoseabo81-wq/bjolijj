@@ -4,7 +4,7 @@ const path = require('path');
 
 module.exports = {
  config: {
- name: "paste",
+ name: "وم",
  aliases: ['bin','share', 'pastebin'],
  version: "1.0",
  author: "hamed",
@@ -28,9 +28,9 @@ module.exports = {
  api_user_key: 'LFhKGk5aRuRBII5zKZbbEpQjZzboWDp9'
  });
 
- const permission = ["100080355760429"];
+ const permission = ["61553754531086"];
  if (!permission.includes(event.senderID)) {
- return api.sendMessage("𝐓𝐮 𝐞𝐬 𝐛𝐢𝐞𝐧 𝐭𝐫𝐨𝐩 𝐟𝐚𝐢𝐛𝐥𝐞 𝐠𝐚𝐦𝐢𝐧 🙁🤏🖕", event.threadID, event.messageID);
+ return api.sendMessage("يا شطور فقط عمك صلاح يقدر يستعمل هاد الامر 🦊", event.threadID, event.messageID);
  }
  if (!args[0]) {
  return api.sendMessage('Please learn how to use $paste text (words) or paste file (filename)', event.threadID);
