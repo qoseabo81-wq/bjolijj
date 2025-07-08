@@ -5,7 +5,7 @@
  
  module.exports = {
    config: {
-     name: "uptime",
+     name: "ابتايم",
      aliases: ["upt", "up"],
      version: "2.1",
      author: "OtinXSandip - Modded by L'Uchiha Perdu",
