@@ -1,6 +1,6 @@
 module.exports = {
   config: {
-    name: "set",
+    name: "تعيين",
     aliases: ['ap'],
     version: "1.0",
     author: "Loid Butter",
