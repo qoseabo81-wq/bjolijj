@@ -66,15 +66,16 @@ module.exports = {
         const guideBody = configCommand.guide?.ar || "لا يوجد دليل";
         const usage = guideBody.replace(/{pn}/g, prefix + configCommand.name);
 
-        let response = `✦ الاسم ✦\n ${configCommand.name}\n\n`;
-        response += `❖ معلومات ❖\n`;
-        response += ` 📜 الوصف: ${description}\n`;
-        response += ` 🔗 الأسماء البديلة: ${configCommand.aliases ? configCommand.aliases.join(", ") : "لا يوجد"}\n`;
-        response += ` 🏆 الدور: ${configCommand.role} \n`;
-        response += ` ⏳ وقت الانتظار: ${cconfigCommand.countDown || 1}ثانية\n`;
-        response += ` 🛠️ المطور: Rako San \n\n`;
-        response += `❖ الاستخدام ❖\n ${configCommand.guide}\n\n`;
-        response += `❖ ملاحظات ❖\n 🔹 المحتوى بين <XXXXX> يمكن تعديله\n 🔹 المحتوى بين [a|b|c] يعني a أو b أو c\n`;
+        let response = `✦ اسم ✦\n  ${configCommand.name}\n\n`;
+        response += `❖ 𝙸𝙽𝙵𝙾 ❖\n`;
+        response += `  📜 𝙳𝚎𝚜𝚌𝚛𝚒𝚙𝚝𝚒𝚘𝚗: ${longDescription}\n`;
+        response += `  🔗 𝙰𝚕𝚒𝚊𝚜: ${configCommand.aliases ? configCommand.aliases.join(", ") : "Aucun"}\n`;
+        response += `  🏆 𝚁𝙾𝙻𝙴: ${roleText}\n`;
+        response += `  ⏳ 𝚃𝚎𝚖𝚙𝚜 d'attente: ${configCommand.countDown || 1}s\n`;
+        response += `  🛠️ 𝙰𝚞𝚝𝚎𝚞𝚛: ${author}\n\n`;
+        response += `❖ 𝚄𝚂𝙰𝙶𝙴 ❖\n  ${usage}\n\n`;
+        response += `❖ 𝙽𝙾𝚃𝙴𝚂 ❖\n  🔹 Le contenu entre <XXXXX> peut être modifié\n  🔹 Le contenu entre [a|b|c] signifie a ou b ou c\n`;
+
         await message.reply(response);
       }
     }
