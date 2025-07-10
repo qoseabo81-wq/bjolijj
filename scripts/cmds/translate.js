@@ -3,7 +3,7 @@ const defaultEmojiTranslate = "🌐";
 
 module.exports = {
 	config: {
-		name: "translate",
+		name: "ترجم",
 		aliases: ["trans"],
 		version: "1.5",
 		author: "NTKhang",
