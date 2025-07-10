@@ -3,7 +3,7 @@ const checkUrlRegex = /(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[
 
 module.exports = {
 	config: {
-		name: "setrankup",
+		name: "تعيين_رانك",
 		version: "1.2",
 		author: "NTKhang",
 		countDown: 0,
