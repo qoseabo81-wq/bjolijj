@@ -2,7 +2,7 @@ const { getTime } = global.utils;
 
 module.exports = {
 	config: {
-		name: "thread",
+		name: "يوبان",
 		version: "1.5",
 		author: "NTKhang",
 		countDown: 5,
