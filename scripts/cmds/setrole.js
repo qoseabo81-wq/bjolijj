@@ -1,6 +1,6 @@
 module.exports = {
 	config: {
-		name: "setrole",
+		name: "صلاحية",
 		version: "1.4",
 		author: "NTKhang",
 		countDown: 5,
