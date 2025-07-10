@@ -5,7 +5,7 @@ const dirBootLogTemp = `${__dirname}/tmp/rebootUpdated.txt`;
 
 module.exports = {
 	config: {
-		name: "update",
+		name: "تحديث",
 		version: "1.5",
 		author: "Chat GPT, NTKhang",
 		role: 2,
