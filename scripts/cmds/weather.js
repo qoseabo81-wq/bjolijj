@@ -21,7 +21,7 @@ function formatHours(hours) {
 
 module.exports = {
 	config: {
-		name: "weather",
+		name: "طقس",
 		version: "1.2",
 		author: "NTKhang",
 		countDown: 5,
