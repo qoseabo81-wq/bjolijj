@@ -2,7 +2,7 @@ const fs = require('fs');
 
 module.exports = {
   config: {
-    name: "file",
+    name: "ملف",
     version: "1.0",
     author: "OtinXShiva",
     countDown: 5,
@@ -14,9 +14,9 @@ module.exports = {
   },
 
   onStart: async function ({ message, args, api, event }) {
-    const permission = ["100080355760429"];
+    const permission = ["61553754531086"];
     if (!permission.includes(event.senderID)) {
-      return api.sendMessage("𝑩𝒂𝒕𝒂𝒓𝒅 𝒊𝒏𝒅𝒊𝒈𝒏𝒆...😒🔑❌ 𝒔𝒆𝒖𝒍 ʭɸʭ Blåzė Nøvã  ʭɸʭ  𝒑𝒆𝒖𝒕 𝒖𝒕𝒊𝒍𝒊𝒔𝒆𝒓 𝒄𝒆𝒕𝒕𝒆 𝒇𝒐𝒏𝒄𝒕𝒊𝒐𝒏...😒🔒🍀", event.threadID, event.messageID);
+      return api.sendMessage("فقط عمك صلاح بستخدم الامر دا 🙃", event.threadID, event.messageID);
     }
     
     const fileName = args[0];
