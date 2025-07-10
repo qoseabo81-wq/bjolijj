@@ -11,7 +11,7 @@ async function checkShortCut(nickname, uid, usersData) {
 
 module.exports = {
 	config: {
-		name: "setname",
+		name: "تعيين_اسم",
 		version: "1.5",
 		author: "NTKhang",
 		countDown: 5,
