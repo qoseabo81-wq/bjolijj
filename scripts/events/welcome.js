@@ -26,10 +26,10 @@ module.exports = {
 			session2: "noon",
 			session3: "afternoon",
 			session4: "evening",
-			welcomeMessage: "Thank you for inviting me to the group!\nBot prefix: %1\nTo view the list of commands, please enter: %1help",
+			welcomeMessage: "❀━━━━〖 نازي 〗━━━━❀\nرمز البوت: %1 \n ═══════❍═══════ \n مطور البوت: Rebo San \n ═══════❍═══════\n لعرض الاوامر, اكتب : %1 اوامر \n ═══════❍═══════",
 			multiple1: "you",
 			multiple2: "you guys",
-			defaultWelcomeMessage: `Hello {userName}.\nWelcome {multiple} to the chat group: {boxName}\nHave a nice {session} 😊`
+			defaultWelcomeMessage: `❀━━━━〖 نازي 〗━━━━❀\n مرحبا : {userName}. \n ═══════❍═══════\nاهلا بك {multiple} الا مجموعتنا : {boxName}\n═══════❍═══════\n اتمنى لك وقت سعيد {session} 😊`
 		}
 	},
 
