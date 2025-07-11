@@ -1,6 +1,6 @@
 module.exports = {
 	config: {
-		name: "leaveall",
+		name: "لفل",
     aliases: ["la"],
 		version: "1.0",
 		author: "otiney fix by kivv",
