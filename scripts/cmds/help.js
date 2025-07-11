@@ -49,7 +49,7 @@ module.exports = {
 
       msg += `نازي يحتوي حاليًا على ${commands.size} أوامر. استخدم ${prefix}help متبوعًا باسم الأمر لمزيد من التفاصيل حول الأمر`;
       msg += `\n─╼━━━━━━━━╾─
-     Rako San    
+                   Rako San    
 ─━━━━━━━━━╾─\n`;
       await message.reply({ body: msg });
     } else {
