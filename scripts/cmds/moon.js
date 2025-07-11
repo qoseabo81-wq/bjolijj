@@ -11,7 +11,7 @@ const { getStreamFromURL } = global.utils;
 
 module.exports = {
 	config: {
-		name: "moon",
+		name: "قمر",
 		version: "1.4",
 		author: "NTKhang",
 		countDown: 5,
