@@ -1,6 +1,6 @@
 module.exports = {
 	config: {
-		name: "ignoreonlyadbox",
+		name: "تحاهل2",
 		aliases: ["ignoreadboxonly", "ignoreadminboxonly"],
 		version: "1.2",
 		author: "NTKhang",
