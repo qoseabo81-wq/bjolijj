@@ -2,7 +2,7 @@ module.exports = {
 
   config: {
 
-    name: "gcadmin",
+    name: "ادمنز",
 
     aliases: ['groupadmin','admingc', 'admingroup'],
 
