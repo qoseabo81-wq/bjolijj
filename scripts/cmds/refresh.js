@@ -1,6 +1,6 @@
 module.exports = {
 	config: {
-		name: "refresh",
+		name: "تحديث",
 		version: "1.2",
 		author: "NTKhang",
 		countDown: 60,
