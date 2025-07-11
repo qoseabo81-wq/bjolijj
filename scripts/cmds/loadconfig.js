@@ -2,7 +2,7 @@ const fs = require("fs-extra");
 
 module.exports = {
 	config: {
-		name: "loadconfig",
+		name: "تحميل-اعدادات",
 		aliases: ["loadcf"],
 		version: "1.4",
 		author: "NTKhang",
