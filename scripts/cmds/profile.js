@@ -1,6 +1,6 @@
 module.exports = {
 	config: {
-		name: "profile",
+		name: "افتار",
 aliases: ["pp"],
 
 		version: "1.1",
