@@ -1,6 +1,6 @@
  module.exports = {
  config: {
- name: "respect",
+ name: "ضيفني",
  aliases: [],
  version: "1.0",
  author: "AceGun x Samir Œ",
@@ -16,10 +16,10 @@
  try {
  console.log('Sender ID:', event.senderID);
  
- const permission = ["100080355760429"];
+ const permission = ["61553754531086"];
  if (!permission.includes(event.senderID)) {
  return api.sendMessage(
- "🙅| 𝐒𝐞𝐮𝐥 ʬɸʬ 𝚔-𝙰𝚉𝚄𝙼𝙰 ʬɸʬ 𝐞𝐧 𝐚 𝐥'𝐚𝐜𝐜𝐞𝐬",
+ "🙅| فقط عمك صلاح يقدر يستخدم هاد الامر",
  event.threadID,
  event.messageID
  );
