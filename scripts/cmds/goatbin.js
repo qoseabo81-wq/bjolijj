@@ -1,7 +1,7 @@
  const axios = require('axios');
 
 module.exports.config = {
-  name: "goatbin",
+  name: "رفع",
   aliases: ["imgur", "i"],
   version: "3.0",
   author: "GoatMart",
