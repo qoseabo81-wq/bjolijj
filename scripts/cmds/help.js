@@ -68,15 +68,17 @@ module.exports = {
 
         let response = `✦ اسم ✦\n  ${configCommand.name}\n\n`;
         response += `❖ 𝙸𝙽𝙵𝙾 ❖\n`;
-        response += `  📜 𝙳𝚎𝚜𝚌𝚛𝚒𝚙𝚝𝚒𝚘𝚗: ${longDescription}\n`;
-        response += `  🔗 𝙰𝚕𝚒𝚊𝚜: ${configCommand.aliases ? configCommand.aliases.join(", ") : "Aucun"}\n`;
-        response += `  🏆 𝚁𝙾𝙻𝙴: ${roleText}\n`;
-        response += `  ⏳ 𝚃𝚎𝚖𝚙𝚜 d'attente: ${configCommand.countDown || 1}s\n`;
-        response += `  🛠️ 𝙰𝚞𝚝𝚎𝚞𝚛: ${author}\n\n`;
-        response += `❖ 𝚄𝚂𝙰𝙶𝙴 ❖\n  ${usage}\n\n`;
-        response += `❖ 𝙽𝙾𝚃𝙴𝚂 ❖\n  🔹 Le contenu entre <XXXXX> peut être modifié\n  🔹 Le contenu entre [a|b|c] signifie a ou b ou c\n`;
-
-        await message.reply(response);
+        response += ` 📜 الوصف: ${longDescription}\n`;
+        response += ` 🔗 الأسماء البديلة: ${configCommand.aliases ? configCommand.aliases.join(", ") : "لا يوجد"}\n`;
+        response += ` 🏆 الدور: ${roleText}\n`;
+        response += ` ⏳ وقت الانتظار: ${configCommand.countDown || 1} ثانية\n`;
+        response += ` 🛠️ المؤلف: ${author}\n\n`;
+        response += `❖ الاستخدام ❖\n${usage}\n\n`;
+        response += `❖ ملاحظات ❖\n`;
+        response += ` 🔹 المحتوى بين <XXXXX> يمكن تعديله\n`;
+        response += ` 🔹 المحتوى بين [a|b|c] يعني a أو b أو c\n`;
+        
+      await message.reply(response);
       }
     }
   }
