@@ -4,7 +4,7 @@ const { drive } = global.utils;
 
 module.exports = {
   config: {
-    name: "rankup",
+    name: "ترقية",
     version: "1.4",
     author: "NTKhang",
     countDown: 5,
