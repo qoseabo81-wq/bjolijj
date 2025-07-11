@@ -22,14 +22,14 @@ module.exports = {
 			defaultWelcomeMessage: "Xin chào {userName}.\nChào mừng bạn đến với {boxName}.\nChúc bạn có buổi {session} vui vẻ!"
 		},
 		en: {
-			session1: "morning",
-			session2: "noon",
-			session3: "afternoon",
+			session1: "صباح",
+			session2: " ",
+			session3: " ",
 			session4: "evening",
 			welcomeMessage: "❀━━━━〖 نازي 〗━━━━❀\nرمز البوت: %1 \n ═══════❍═══════ \n مطور البوت: Rebo San \n ═══════❍═══════\n لعرض الاوامر, اكتب : %1 اوامر \n ═══════❍═══════",
-			multiple1: "you",
-			multiple2: "you guys",
-			defaultWelcomeMessage: `❀━━━━〖 نازي 〗━━━━❀\n مرحبا : {userName}. \n ═══════❍═══════\nاهلا بك {multiple} الا مجموعتنا : {boxName}\n═══════❍═══════\n اتمنى لك وقت سعيد {session} 😊`
+			multiple1: "يا انت",
+			multiple2: "يا شباب",
+			defaultWelcomeMessage: `❀━━━━〖 نازي 〗━━━━❀\n مرحبا : {userName}. \n ═══════❍═══════\nاهلا بك {multiple} الا مجموعتنا : {boxName}\n═══════❍═══════\n اتمنى لك وقت سعيد  `
 		}
 	},
 
@@ -95,7 +95,7 @@ module.exports = {
 						mentions: welcomeMessage.match(/\{userNameTag\}/g) ? mentions : null
 					};
 					welcomeMessage = welcomeMessage
-						.replace(/\{userName\}|\{userNameTag\}/g, userName.join(", "))
+						.replace(/\{userName\}|\{userNameTag\}/g, userName.join(" « "))
 						.replace(/\{boxName\}|\{threadName\}/g, threadName)
 						.replace(
 							/\{multiple\}/g,
