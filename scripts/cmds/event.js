@@ -11,7 +11,7 @@ function getDomain(url) {
 
 module.exports = {
 	config: {
-		name: "event",
+		name: "حدث",
 		version: "1.9",
 		author: "NTKhang",
 		countDown: 5,
