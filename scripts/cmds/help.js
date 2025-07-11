@@ -48,9 +48,9 @@ module.exports = {
         });
 
       msg += `نازي يحتوي حاليًا على ${commands.size} أوامر. استخدم ${prefix}help متبوعًا باسم الأمر لمزيد من التفاصيل حول الأمر`;
-      msg += `\n ╭─╼━━━━━━━━╾─╮
+      msg += `\n─╼━━━━━━━━╾─
      Rako San    
-╰─━━━━━━━━━╾─╯ \n`;
+─━━━━━━━━━╾─\n`;
       await message.reply({ body: msg });
     } else {
       const commandName = args[0].toLowerCase();
