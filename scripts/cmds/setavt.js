@@ -2,7 +2,7 @@ const axios = require("axios");
 
 module.exports = {
 	config: {
-		name: "setavt",
+		name: "تعين-برو",
 		aliases: ["changeavt", "setavatar"],
 		version: "1.3",
 		author: "NTKhang",
