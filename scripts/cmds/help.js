@@ -25,7 +25,7 @@ module.exports = {
     const prefix = getPrefix(threadID);
 
     if (args.length === 0) {
-      let msg = "❀━━━━〖 الاوامـر 〗━━━━❀\n\n";
+      let msg = "◈ ───『قائمة الاوامر』─── ◈\n\n";
       const categories = {};
 
       for (const [name, value] of commands) {
@@ -42,15 +42,13 @@ module.exports = {
           
           const names = categories[category].commands.sort();
           names.forEach(cmd => {
-            msg += `» : ${cmd.padEnd(15)}\n`;
+            msg += ` ◈ » : ${cmd.padEnd(15)}\n`;
           });
           
         });
 
-      msg += `نازي يحتوي حاليًا على ${commands.size} أوامر. استخدم ${prefix}اوامر متبوعًا باسم الأمر لمزيد من التفاصيل حول الأمر`;
-      msg += `\n─╼━━━━━━━━╾─
-                                 Rako San    
-─━━━━━━━━━╾─\n`;
+      msg += `نازي يحتوي حاليًا على ${commands.size} \n أوامر. استخدم ${prefix}اوامر متبوعًا باسم الامر \n لمزيد من التفاصيل حول الأمر`;
+      msg += `◈ ───『 نــــازي 』─── ◈`;
       await message.reply({ body: msg });
     } else {
       const commandName = args[0].toLowerCase();
