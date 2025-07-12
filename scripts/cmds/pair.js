@@ -44,7 +44,7 @@ module.exports = {
       }
     }
     var id2 = ungvien[Math.floor(Math.random() * ungvien.length)];
-    var name2 = "جوز بط مظ 🐢"; // Replace with function that retrieves the name of the user
+    var name2 = " جوز بط مظ 🐢 "; // Replace with function that retrieves the name of the user
     var rd1 = Math.floor(Math.random() * 100) + 1;
     var cc = ["0", "-1", "99,99", "-99", "-100", "101", "0,01"];
     var rd2 = cc[Math.floor(Math.random() * cc.length)];
@@ -92,7 +92,7 @@ module.exports = {
     fs.removeSync(pathAvt2);
     return api.sendMessage(
       {
-        body: `تم الزواج بنجاح 🐢 ${name1}\💌 نتمنى لك زواج سعيد يمظ${name2}.\— الاحتمالات هي ${tile}%`,
+        body: ` تم الزواج بنجاح 🐢 ${name1}\💌 نتمنى لك زواج سعيد يمظ${name2}.\— الاحتمالات هي ${tile}% `,
         mentions: [
           {
             tag: `${name2}`,
