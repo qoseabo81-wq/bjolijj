@@ -1,4 +1,4 @@
-module.exports.config = {
+/cmd install أعلام.js module.exports.config = {
     name: "اعلام",
     version: "1.0.0",
     role: 0,
@@ -8,10 +8,6 @@ module.exports.config = {
     category: "العاب",
     countDown: 10
 };
-
-const fs = require('fs');
-const axios = require('axios');
-const tempImageFilePath = __dirname + "/cache/tempImage.jpg";
 
 module.exports.onReply = async function ({ api, event, Reply, usersData }) {
     const userAnswer = event.body.trim().toLowerCase();
@@ -26,8 +22,6 @@ module.exports.onReply = async function ({ api, event, Reply, usersData }) {
     } else {
         api.sendMessage(`خطأ، حاول مرة أخرى`, event.threadID);
     }
-
-    fs.unlinkSync(tempImageFilePath);
 };
 
 module.exports.onStart = async function ({ api, event, args, commandName }) {
@@ -153,13 +147,11 @@ module.exports.onStart = async function ({ api, event, args, commandName }) {
     const randomQuestion = questions[Math.floor(Math.random() * questions.length)];
     const correctAnswer = randomQuestion.answer;
 
-    const imageResponse = await axios.get(randomQuestion.image, { responseType: "arraybuffer" });
-    fs.writeFileSync(tempImageFilePath, Buffer.from(imageResponse.data, "binary"));
-
-    const attachment = [fs.createReadStream(tempImageFilePath)];
+    const x = await utils.getStreamFromUrl(randomQuestion.image);
+    
     const message = `ما اسم علم هذه الدولة؟`;
 
-    api.sendMessage({ body: message, attachment }, event.threadID, (error, info) => {
+    api.sendMessage({ body: message, attachment: x }, event.threadID, (error, info) => {
         if (!error) {
             global.GoatBot.onReply.set(info.messageID, {
                 commandName,
