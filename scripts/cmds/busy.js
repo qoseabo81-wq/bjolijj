@@ -1,61 +1,55 @@
-const handleReply = [];
-
-module.exports.config = {
-  name: "اعلام",
-  aliases: ["دول"],
-  permissions: [0],
-  description: "لعبة احزر العلم",
-  usage: "",
-  cooldown: 0,
-  credits: "عمر",
-  commandCategory: "العاب"
-};
-
 const questions = [
   { image: "https://i.pinimg.com/originals/6f/a0/39/6fa0398e640e5545d94106c2c42d2ff8.jpg", answer: "العراق" },
   { image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/256px-Flag_of_Brazil.svg.png", answer: "البرازيل" },
-  { image: "https://i.pinimg.com/originals/66/38/a1/6638a104725f4fc592c1b832644182cc.jpg", answer: "فلسطين" },
-  { image: "https://i.pinimg.com/originals/f9/47/0e/f9470ea33ff6fbf794b0b8bb00a5ccb4.jpg", answer: "المغرب" },
-  { image: "https://i.pinimg.com/originals/2d/a2/6e/2da26e58efd5f32fe2e33b9654907ab5.gif", answer: "الصومال" }
+  { image: "https://i.pinimg.com/originals/66/38/a1/6638a104725f4fc592c1b832644182cc.jpg", answer: "فلسطين" }
 ];
 
-module.exports.run = async function({ api, event, Currencies }) {
-  try {
-    const randomQuestion = questions[Math.floor(Math.random() * questions.length)];
-    const correctAnswer = randomQuestion.answer.toLowerCase();
+module.exports = {
+  config: {
+    name: "اعلام",
+    version: "1.0",
+    author: "عمر",
+    countDown: 5,
+    role: 0,
+    description: { en: "لعبة احزر العلم" },
+    category: "games"
+  },
 
-    const sentMessage = await api.sendMessage(
-      { body: "ما اسم علم هذه الدولة؟", attachment: [{ type: "image", url: randomQuestion.image }] },
-      event.threadID
-    );
+  onStart: async function({ message, event, args, getLang, Currencies }) {
+    try {
+      const randomQuestion = questions[Math.floor(Math.random() * questions.length)];
+      const correctAnswer = randomQuestion.answer.toLowerCase();
 
-    handleReply.push({
-      messageID: sentMessage.messageID,
-      correctAnswer,
-      answered: false
-    });
+      // أرسل الصورة
+      const sentMsg = await message.reply({ 
+        body: "ما اسم علم هذه الدولة؟", 
+        attachment: [{ type: "image", url: randomQuestion.image }] 
+      });
 
-  } catch (err) {
-    console.error(err);
-    api.sendMessage("❌ حدث خطأ، حاول مرة أخرى.", event.threadID);
-  }
-};
+      // سجل الرد الأول فقط
+      global.flagsGame = global.flagsGame || {};
+      global.flagsGame[event.threadID] = {
+        messageID: sentMsg.messageID,
+        correctAnswer,
+        answered: false
+      };
 
-module.exports.handleReply = async function({ api, event, Currencies }) {
-  try {
-    const userAnswer = event.body.trim().toLowerCase();
-    const current = handleReply.find(x => !x.answered);
-    if (!current) return;
-
-    if (userAnswer === current.correctAnswer) {
-      await Currencies.increaseMoney(event.senderID, 50);
-      api.sendMessage(`✅ تهانينا! إجابتك صحيحة، لقد حصلت على 50 دولار`, event.threadID);
-      current.answered = true;
-    } else {
-      api.sendMessage("❌ إجابة خاطئة، حاول مرة أخرى", event.threadID);
+    } catch (err) {
+      console.error(err);
+      message.reply("❌ حدث خطأ، حاول مرة أخرى");
     }
-  } catch (err) {
-    console.error(err);
-    api.sendMessage("❌ حدث خطأ أثناء التحقق من الإجابة.", event.threadID);
+  },
+
+  onReply: async function({ message, event, getLang, Currencies }) {
+    const game = global.flagsGame?.[event.threadID];
+    if (!game || game.answered) return;
+
+    if (message.body.trim().toLowerCase() === game.correctAnswer) {
+      await Currencies.increaseMoney(event.senderID, 50);
+      message.reply(`✅ تهانينا! إجابتك صحيحة، لقد حصلت على 50 دولار`);
+      game.answered = true; // تمنع أي شخص آخر من الإجابة
+    } else {
+      message.reply("❌ إجابة خاطئة، حاول مرة أخرى");
+    }
   }
 };
